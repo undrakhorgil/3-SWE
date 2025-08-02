@@ -1,128 +1,228 @@
+🧠 Git Commands Cheat Sheet
 
-# 🧠 Git Commands Cheat Sheet
+A quick reference for essential Git commands and concepts to streamline your workflow.
 
+Created: August 1, 2025
 
 
-## 🛠️ Setup
 
-git config --global user.name "Your Name" : Set your Git username
+🛠️ Setup
 
-git config --global user.email "your@email.com" : Set your Git email
 
-git config --list : View current Git config
 
 
 
-## 📁 Repository
+Set your Git username: git config --global user.name "Your Name"
 
-git init : Initialize a new Git repo
 
-git clone <repo-url> : Clone a repo
 
-git status : Show status of working directory
+Set your Git email: git config --global user.email "your@email.com"
 
-git add <file>  /  git add . : Stage changes
 
-git commit -m "message" : Commit staged changes
 
-git log : Show commit history
+View current Git config: git config --list
 
-git show <commit> : Show details of a commit
+📁 Repository
 
-git diff : Show unstaged changes
 
-git diff --staged : Show staged changes
 
 
 
-## 🌿 Branching
+Initialize a new Git repo: git init
 
-git branch : List branches
 
-git branch <name> : Create a branch
 
-git checkout <branch> : Switch branches
+Clone a repo: git clone <repo-url>
 
-git checkout -b <branch> : Create + switch
 
-git merge <branch> : Merge a branch into current
 
-git rebase <branch> : Reapply commits on another base
+Show status of working directory: git status
 
-git branch -d <branch> : Delete branch
 
 
+Stage changes: git add <file> or git add .
 
-## 🔄 Remote
 
-git remote -v : List remotes
 
-git remote add origin <url> : Add remote
+Commit staged changes: git commit -m "message"
 
-git push -u origin main : Push and set upstream (track remote branch)
 
-git push origin main : Push to remote (without setting upstream)
 
-git pull : Pull from remote
+Show commit history: git log
 
-git fetch : Download but don’t merge
 
 
+Show details of a commit: git show <commit>
 
-## 🧪 Undo
 
-git reset <file> : Unstage
 
-git reset --soft HEAD~1 : Undo commit (keep staged)
+Show unstaged changes: git diff
 
-git reset --hard : Undo all changes (careful!)
 
-git checkout -- <file> : Discard local changes
 
-git revert <commit> : Undo by creating new commit
+Show staged changes: git diff --staged
 
+🌿 Branching
 
 
-## 📦 Tags
 
-git tag : List tags
 
-git tag <v1.0> : Create tag
 
-git push origin <tag> : Push tag
+List branches: git branch
 
 
 
-## 👥 Collaboration
+Create a branch: git branch <name>
 
-git pull origin main : Pull latest changes
 
-git push origin <branch> : Push branch
 
-git stash : Save local changes
+Switch branches: git checkout <branch>
 
-git stash pop : Restore stashed changes
 
 
+Create + switch: git checkout -b <branch>
 
-## 🧠 Concepts
 
-•    Working Directory: Your files
 
-•    Staging Area: Prepares files to be committed
+Merge a branch into current: git merge <branch>
 
-•    Commit: A snapshot of the project
 
-•    Branch: A series of commits
 
-•    Merge: Combine two branches
+Reapply commits on another base: git rebase <branch>
 
-•    Rebase: Reapply commits on top of another branch
 
 
+Delete branch: git branch -d <branch>
 
-## ❓  git push -u origin main  vs  git push origin main 
+🔄 Remote
 
-git push -u origin main : Push and set the *upstream* — after this, you can just run  git push  or  git pull  without arguments.
 
-git push origin main : Push to remote, but *does not track* the branch — you’ll always need to specify branch next time.
+
+
+
+List remotes: git remote -v
+
+
+
+Add remote: git remote add origin <url>
+
+
+
+Push and set upstream: git push -u origin main
+
+
+
+Push to remote (without setting upstream): git push origin main
+
+
+
+Pull from remote: git pull
+
+
+
+Download but don’t merge: git fetch
+
+🧪 Undo
+
+
+
+
+
+Unstage: git reset <file>
+
+
+
+Undo commit (keep staged): git reset --soft HEAD~1
+
+
+
+Undo all changes (careful!): git reset --hard
+
+
+
+Discard local changes: git checkout -- <file>
+
+
+
+Undo by creating new commit: git revert <commit>
+
+📦 Tags
+
+
+
+
+
+List tags: git tag
+
+
+
+Create tag: git tag <v1.0>
+
+
+
+Push tag: git push origin <tag>
+
+👥 Collaboration
+
+
+
+
+
+Pull latest changes: git pull origin main
+
+
+
+Push branch: git push origin <branch>
+
+
+
+Save local changes: git stash
+
+
+
+Restore stashed changes: git stash pop
+
+🧠 Concepts
+
+
+
+
+
+Working Directory: Your files
+
+
+
+Staging Area: Prepares files to be committed
+
+
+
+Commit: A snapshot of the project
+
+
+
+Branch: A series of commits
+
+
+
+Merge: Combine two branches
+
+
+
+Rebase: Reapply commits on top of another branch
+
+❓ git push -u origin main vs git push origin main
+
+
+
+
+
+git push -u origin main: Pushes and sets the upstream — after this, you can just run git push or git pull without arguments.
+
+
+
+git push origin main: Pushes to remote but does not track the branch — you’ll need to specify the branch next time.
+
+
+
+Note: Use this cheat sheet as a quick reference for Git commands during development. Happy coding! 🚀
+Last updated: August 1, 2025
